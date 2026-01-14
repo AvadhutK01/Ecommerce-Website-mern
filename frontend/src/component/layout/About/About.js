@@ -16,12 +16,12 @@ const About = () => {
 
                 <div>
                     <div>
-                        <Image
+                        {/* <Image
                             style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
                             src=""
                             alt="Founder"
-                        />
-                        <Header>Avadhut Kelaskar</Header>
+                        /> */}
+                        <Header>Avadhut Kelaksar</Header>
                         <Button onClick={visitInstagram} color="primary">
                             Visit Instagram
                         </Button>
