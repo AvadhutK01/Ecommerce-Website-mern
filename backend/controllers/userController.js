@@ -34,7 +34,7 @@ exports.registerUser = catchErrors(async (req, res, next) => {
         if (Err.code === 11000) {
             return next(new ErrorHandler("User already exist please login", 400));
         }
-        if (Err && Err.message && err.message.includes("Could not decode base64")) {
+        if (Err && Err.message && Err.message.includes("Could not decode base64")) {
             return next(new ErrorHandler('Unsupported image format', 400));
         }
         return next(new ErrorHandler("Internal server error!", 500));
